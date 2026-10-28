@@ -1,0 +1,37 @@
+$ act --dryrun push   (first ever run; the picker below appears, Medium chosen)
+? Please choose the default image you want to use with act:
+  - Large size image: ca. 17GB download + 53.1GB storage, you will need 75GB of free disk space, snapshots of GitHub Hosted Runners without snap and pulled docker images
+  - Medium size image: ~500MB, includes only necessary tools to bootstrap actions and aims to be compatible with most actions
+  - Micro size image: <200MB, contains only NodeJS required to bootstrap actions, doesn't work with all actions
+Default image and other options can be changed manually in /home/hatch/workspace/build-check/act-scratch/fakehome/.config/act/actrc (please refer to https://nektosact.com/usage/index.html?highlight=configur#configuration-file for additional information about file structure)  [Use arrows to move, type to filter, ? for more help]
+  Large
+> Medium
+  Micro
+*DRYRUN* [CI/test] ⭐ Run Set up job
+*DRYRUN* [CI/test] 🚀  Start image=catthehacker/ubuntu:act-latest
+*DRYRUN* [CI/test]   🐳  docker pull image=catthehacker/ubuntu:act-latest platform= username= forcePull=true
+*DRYRUN* [CI/test]   🐳  docker create image=catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+*DRYRUN* [CI/test]   🐳  docker run image=catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+*DRYRUN* [CI/test]   ✅  Success - Set up job
+*DRYRUN* [CI/test] ⭐ Run Main actions/checkout@v4
+*DRYRUN* [CI/test]   ✅  Success - Main actions/checkout@v4 [9.643004ms]
+*DRYRUN* [CI/test] ⭐ Run Main Run the tests
+*DRYRUN* [CI/test]   ✅  Success - Main Run the tests [30.538447ms]
+*DRYRUN* [CI/test] ⭐ Run Complete job
+*DRYRUN* [CI/test] Cleaning up container for job test
+*DRYRUN* [CI/test]   ✅  Success - Complete job
+*DRYRUN* [CI/test] 🏁  Job succeeded
+*DRYRUN* [CI/package] ⭐ Run Set up job
+*DRYRUN* [CI/package] 🚀  Start image=catthehacker/ubuntu:act-latest
+*DRYRUN* [CI/package]   🐳  docker pull image=catthehacker/ubuntu:act-latest platform= username= forcePull=true
+*DRYRUN* [CI/package]   🐳  docker create image=catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+*DRYRUN* [CI/package]   🐳  docker run image=catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+*DRYRUN* [CI/package]   ✅  Success - Set up job
+*DRYRUN* [CI/package] ⭐ Run Main actions/checkout@v4
+*DRYRUN* [CI/package]   ✅  Success - Main actions/checkout@v4 [8.587271ms]
+*DRYRUN* [CI/package] ⭐ Run Main Pack the project into a tarball
+*DRYRUN* [CI/package]   ✅  Success - Main Pack the project into a tarball [24.217466ms]
+*DRYRUN* [CI/package] ⭐ Run Complete job
+*DRYRUN* [CI/package] Cleaning up container for job package
+*DRYRUN* [CI/package]   ✅  Success - Complete job
+*DRYRUN* [CI/package] 🏁  Job succeeded

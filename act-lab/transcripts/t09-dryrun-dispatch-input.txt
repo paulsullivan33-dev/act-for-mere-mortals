@@ -1,0 +1,17 @@
+$ act --dryrun workflow_dispatch --input name=World
+time="2026-10-28T18:29:47Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+*DRYRUN* [Greet/greet] ⭐ Run Set up job
+*DRYRUN* [Greet/greet] 🚀  Start image=catthehacker/ubuntu:act-latest
+*DRYRUN* [Greet/greet]   🐳  docker pull image=catthehacker/ubuntu:act-latest platform= username= forcePull=true
+*DRYRUN* [Greet/greet]   🐳  docker create image=catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+*DRYRUN* [Greet/greet]   🐳  docker run image=catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+*DRYRUN* [Greet/greet]   ✅  Success - Set up job
+*DRYRUN* [Greet/greet] ⭐ Run Main Say hello
+*DRYRUN* [Greet/greet]   ✅  Success - Main Say hello [28.687641ms]
+*DRYRUN* [Greet/greet] ⭐ Run Main Show the event name
+*DRYRUN* [Greet/greet]   ✅  Success - Main Show the event name [32.728112ms]
+*DRYRUN* [Greet/greet] ⭐ Run Complete job
+*DRYRUN* [Greet/greet] Cleaning up container for job greet
+*DRYRUN* [Greet/greet]   ✅  Success - Complete job
+*DRYRUN* [Greet/greet] 🏁  Job succeeded
+exit code: 0

@@ -1,0 +1,15 @@
+$ act --dryrun push --eventpath push-event.json --actor octocat
+time="2026-10-28T18:30:08Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+*DRYRUN* [CI/test] ⭐ Run Set up job
+*DRYRUN* [CI/test] 🚀  Start image=catthehacker/ubuntu:act-latest
+*DRYRUN* [CI/test]   🐳  docker pull image=catthehacker/ubuntu:act-latest platform= username= forcePull=true
+*DRYRUN* [CI/test]   🐳  docker create image=catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+*DRYRUN* [CI/test]   🐳  docker run image=catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+
+$ act --validate
+time="2026-10-28T18:30:08Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+exit code: 0
+
+$ act --validate --strict
+time="2026-10-28T18:30:09Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+exit code: 0

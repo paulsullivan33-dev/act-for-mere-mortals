@@ -1,0 +1,9 @@
+$ cat .actrc
+-P ubuntu-latest=ghcr.io/catthehacker/ubuntu:act-latest
+
+$ act --dryrun push   (no -P flag this time)
+time="2026-10-28T18:30:39Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+*DRYRUN* [CI/test] ⭐ Run Set up job
+*DRYRUN* [CI/test] 🚀  Start image=ghcr.io/catthehacker/ubuntu:act-latest
+*DRYRUN* [CI/test]   🐳  docker pull image=ghcr.io/catthehacker/ubuntu:act-latest platform= username= forcePull=true
+*DRYRUN* [CI/test]   🐳  docker create image=ghcr.io/catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"

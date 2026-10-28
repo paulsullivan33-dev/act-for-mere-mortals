@@ -1,0 +1,9 @@
+name: Wrong shape
+
+on: push
+
+jobs:
+  test:
+    steps:
+      - name: A step with nowhere to run
+        run: echo hello

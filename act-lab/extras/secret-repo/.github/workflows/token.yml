@@ -1,0 +1,12 @@
+name: Token demo
+
+on: workflow_dispatch
+
+jobs:
+  show:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the token (act masks secret values in its log)
+        run: echo "the token is ${{ secrets.DEMO_TOKEN }}"
+      - name: Use the token in a header-shaped line
+        run: echo "Authorization Bearer ${{ secrets.DEMO_TOKEN }}"

@@ -1,0 +1,8 @@
+$ cd broken-schema && act --dryrun push
+time="2026-10-28T18:30:26Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+time="2026-10-28T18:30:26Z" level=error msg="path/home/hatch/workspace/build-check/act-scratch/broken-schemanot located inside a git repository" error="repository does not exist"
+time="2026-10-28T18:30:26Z" level=warning msg="unable to get git ref: repository does not exist"
+time="2026-10-28T18:30:26Z" level=error msg="path/home/hatch/workspace/build-check/act-scratch/broken-schemanot located inside a git repository" error="repository does not exist"
+time="2026-10-28T18:30:26Z" level=warning msg="unable to get git revision: repository does not exist"
+*DRYRUN* [Wrong shape/test] 'runs-on' key not defined in Wrong shape/test
+exit code: 0

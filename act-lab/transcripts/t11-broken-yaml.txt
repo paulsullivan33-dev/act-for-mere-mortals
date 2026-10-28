@@ -1,0 +1,9 @@
+$ cd broken-yaml && act --list
+time="2026-10-28T18:30:18Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+Error: workflow is not valid. 'broken.yml': yaml: line 8: did not find expected '-' indicator
+exit code: 1
+
+$ act --validate
+time="2026-10-28T18:30:18Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+Error: workflow is not valid. 'broken.yml': yaml: line 8: did not find expected '-' indicator
+exit code: 1

@@ -1,0 +1,10 @@
+name: Broken
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: This step is indented wrong
+       run: echo hello

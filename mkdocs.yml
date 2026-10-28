@@ -1,0 +1,28 @@
+site_name: act for Mere Mortals
+site_description: Run your GitHub Actions workflows on your own machine before you push. How act reads a workflow, shows you the plan, and runs each job in a Docker container that stands in for a GitHub runner, with the gaps between the stand-in and the real thing stated plainly.
+site_url: https://paulsullivan33-dev.github.io/act-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What act Is: what-act-is.md
+  - The Moving Parts: the-moving-parts.md
+  - Installing act: installing-act.md
+  - Your First Look: your-first-look.md
+  - The First-Run Question: the-first-run-question.md
+  - Dry Runs and Validation: dry-runs-and-validation.md
+  - Running for Real: running-for-real.md
+  - Choosing Images: choosing-images.md
+  - Events, Inputs and Secrets: events-inputs-and-secrets.md
+  - Configuration Files: configuration-files.md
+  - Recipes: recipes.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

@@ -1,0 +1,19 @@
+name: CI
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run the tests
+        run: ./test.sh
+
+  package:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pack the project into a tarball
+        run: tar czf wordcount.tar.gz count.sh sample.txt README.md

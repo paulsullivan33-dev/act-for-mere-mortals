@@ -1,0 +1,12 @@
+$ act push -P ubuntu-latest=ghcr.io/catthehacker/ubuntu:act-latest
+time="2026-10-28T18:29:11Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+[CI/test] ⭐ Run Set up job
+[CI/test] 🚀  Start image=ghcr.io/catthehacker/ubuntu:act-latest
+[CI/test]   🐳  docker pull image=ghcr.io/catthehacker/ubuntu:act-latest platform= username= forcePull=true
+[CI/test]   🐳  docker create image=ghcr.io/catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+[CI/test]   🐳  docker run image=ghcr.io/catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+[CI/test] failed to start container: Error response from daemon: failed to create default sandbox: failed to create a netlink handle: failed to set into network namespace 23 while creating netlink socket: operation not permitted
+[CI/test]   ❌  Failure - Set up job
+[CI/test] 🏁  Job failed
+Error: failed to start container: Error response from daemon: failed to create default sandbox: failed to create a netlink handle: failed to set into network namespace 23 while creating netlink socket: operation not permitted
+exit code: 1

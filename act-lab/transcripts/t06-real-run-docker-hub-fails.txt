@@ -1,0 +1,10 @@
+$ act push
+time="2026-10-28T18:24:57Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+[CI/test] ⭐ Run Set up job
+[CI/test] 🚀  Start image=catthehacker/ubuntu:act-latest
+[CI/test]   🐳  docker pull image=catthehacker/ubuntu:act-latest platform= username= forcePull=true
+[CI/test] Error response from daemon: Head "https://registry-1.docker.io/v2/catthehacker/ubuntu/manifests/act-latest": Get "https://auth.docker.io/token?scope=repository%3Acatthehacker%2Fubuntu%3Apull&service=registry.docker.io": EOF
+[CI/test]   ❌  Failure - Set up job
+[CI/test] 🏁  Job failed
+Error: Error response from daemon: Head "https://registry-1.docker.io/v2/catthehacker/ubuntu/manifests/act-latest": Get "https://auth.docker.io/token?scope=repository%3Acatthehacker%2Fubuntu%3Apull&service=registry.docker.io": EOF
+exit code: 1

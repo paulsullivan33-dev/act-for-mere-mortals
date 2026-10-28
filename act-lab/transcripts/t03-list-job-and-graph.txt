@@ -1,0 +1,15 @@
+
+$ act --list --job test
+time="2026-10-28T18:18:35Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+Stage  Job ID  Job name  Workflow name  Workflow file  Events
+0      test    test      CI             ci.yml         push  
+
+$ act --graph
+time="2026-10-28T18:18:36Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+ ╭──────╮ ╭───────╮
+ │ test │ │ greet │
+ ╰──────╯ ╰───────╯
+         ⬇
+    ╭─────────╮
+    │ package │
+    ╰─────────╯
